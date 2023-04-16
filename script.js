@@ -33,6 +33,26 @@ let navd=document.querySelector('.nav-details');
 
 let cross=document.querySelector('.cross');
 
+let start=document.querySelector('.start');
+
+
+
+
+setTimeout(() => {
+     
+    let wrapper=document.querySelector('.wrapper');
+    
+    start.style.display="none";
+    wrapper.style.display="block";
+    
+},3000);
+
+
+
+
+
+
+
 
 console.log(typeof p1);
 

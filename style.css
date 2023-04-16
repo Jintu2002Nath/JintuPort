@@ -11,11 +11,86 @@
 .wrapper
 {
 
+    position: relative;
+
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     overflow-x: hidden;
 
+    display:none;
+
 }
+
+
+
+
+
+
+
+.start
+{
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+   
+    background-image:radial-gradient(circle,yellow,pink,violet) ;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.start img
+{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 12px gray;
+
+    border: 3px solid black;
+
+
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-timing-function:ease;
+
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+
+}
+
+@keyframes scale {
+
+
+    0%{
+
+
+        transform: scale(1);
+       
+    }
+
+   
+
+    100%{
+
+        transform: scale(2.8);
+    
+        opacity: 0;
+
+
+    }
+    
+}
+
+
+
+
 
 
 .subhero
@@ -321,7 +396,7 @@ nav
 
 
 
-@media(width<=500px) {
+@media(width<=700px) {
 
 
 
@@ -346,7 +421,7 @@ nav
         font-size: 6vw;
         z-index: 60;
 
-        top:10%;
+        top:2%;
         right:0%;
 
         /* background-color: rgba(231, 151, 237, 0.942); */
@@ -455,6 +530,7 @@ nav
 
 
 }
+
 
 
 
